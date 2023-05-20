@@ -1,0 +1,71 @@
+@import "vars"
+
+.footer-top
+	padding: 68px 0
+	border-top: 1px solid #292929
+	border-bottom: 1px solid #292929
+
+.footer-box
+	margin: 0 178px 0 0
+	&:last-child
+		margin: 0 0 0 auto
+	h3
+		font-size: 14px
+		letter-spacing: 0.02em
+		color: #ABABAB
+		margin: 0 0 16px
+		text-transform: uppercase
+			
+.footer-menu
+	li
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+		a
+			color: #fff
+			&:hover
+				color: $accent	
+
+.list-social
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 24px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 32px
+			height: 32px
+			min-width: 32px
+			border-radius: 50%
+			background: #fff
+			padding: 6px
+			fill: #000
+			@include d-flex							
+			&:hover
+				fill: #fff
+				background: #000
+
+.footer-bottom
+	padding: 16px 0
+
+.copyright
+	color: #626262
+	font-size: 14px		
+
+.btn-scroll-top
+	position: fixed
+	z-index: 10
+	width: 50px
+	height: 50px
+	background: #292929
+	border-radius: 50%
+	stroke: #fff
+	padding: 13px
+	right: 318px
+	bottom: 370px
+	@include d-flex	
+	&:hover
+		background: #313131
+		stroke: #fff

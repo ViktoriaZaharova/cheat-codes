@@ -1,0 +1,373 @@
+.home {
+  padding: 214px 0 60px;
+  position: relative;
+  z-index: 1;
+}
+.home-content {
+  max-width: 562px;
+}
+.home-content .box-text {
+  margin: 16px 0 32px;
+  max-width: 521px;
+  line-height: 24px;
+}
+
+.home-slider {
+  max-width: 1440px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -1;
+}
+.home-slider__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  margin: 142px auto 0;
+}
+
+.home-slider-item {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home-slider-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-slider-item::before, .home-slider-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-slider-item::before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(11.81%, #000000), color-stop(11.81%, #000000), color-stop(62.15%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, #000000 11.81%, #000000 11.81%, rgba(0, 0, 0, 0) 62.15%);
+}
+.home-slider-item:after {
+  background: linear-gradient(89.99deg, rgba(0, 0, 0, 0) 0.01%, #000000 0.01%, rgba(0, 0, 0, 0) 31%);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.home-slider-item .bg-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 292px;
+  width: 100%;
+  background: linear-gradient(356deg, #000000 11.3%, #000000 11.31%, rgba(0, 0, 0, 0) 97.6%);
+}
+
+.home-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 32px 0 0;
+  font-size: 14px;
+}
+.home-numbers-item {
+  margin: 0 68px 0 0;
+}
+.home-numbers-item:last-child {
+  margin: 0;
+}
+.home-numbers-item p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.home-numbers-item span {
+  color: #ABABAB;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.games-logos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+}
+
+.game-logo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.game-logo__item img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.game-logo__item .img-hover {
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.game-logo__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.game-logo__item:hover img {
+  display: none;
+}
+.game-logo__item:hover .img-hover {
+  display: block;
+}
+
+.popular-games {
+  position: relative;
+  z-index: 2;
+}
+
+.game-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 446px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.game-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(86.92%, #000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.92%);
+}
+.game-card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.game-card__logo {
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+.game-card__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.game-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.game-card__body {
+  margin: auto 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.game-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 234px;
+  margin: 0 auto 0 0;
+  font-weight: 500;
+}
+.game-card__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.game-card__text {
+  color: #ABABAB;
+}
+
+.btn-all {
+  margin: 8px auto 0;
+}
+
+.chit-card {
+  min-height: 272px;
+}
+
+.explore-catalog {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.explore-catalog__content {
+  text-align: center;
+  margin: 48px auto 68px;
+  max-width: 475px;
+}
+.explore-catalog__content .box-text {
+  margin: 16px auto 32px;
+}
+.explore-catalog__content .btn {
+  margin: 0 auto;
+}
+.explore-catalog::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  height: 550px;
+  width: 1125px;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+  background: linear-gradient(255.19deg, rgba(255, 51, 88, 0) 12.37%, rgba(255, 51, 88, 0.1035) 48.59%, rgba(255, 51, 88, 0.0795) 85.39%);
+}
+
+.explore-catalog-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  z-index: -1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.explore-catalog-logos:last-child::before {
+  top: -24px;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(11.31%, #000000), color-stop(97.6%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 11.31%, rgba(0, 0, 0, 0) 97.6%);
+}
+.explore-catalog-logos::before {
+  content: "";
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.02%, #000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000000 0.02%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  max-width: 1284px;
+  height: calc(100% + 60px);
+  bottom: 24px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.explore-catalog-logos__item {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px 20px;
+  background: linear-gradient(86.51deg, rgba(36, 36, 36, 0.38) 1.68%, rgba(255, 51, 88, 0) 107.33%);
+  border-radius: 16px;
+  padding: 20px;
+}
+.explore-catalog-logos__item img {
+  width: 100%;
+}
+.explore-catalog-logos .line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}

@@ -1,0 +1,239 @@
+@import "vars"
+
+.home
+	padding: 214px 0 60px
+	position: relative
+	z-index: 1
+
+	&-content
+		max-width: 562px
+		.box-text
+			margin: 16px 0 32px
+			max-width: 521px
+			line-height: 24px
+
+.home-slider
+	max-width: 1440px
+	width: 100%
+	position: absolute
+	left: 50%
+	top: 0
+	transform: translate(-50%,0)
+	z-index: -1
+	&__nav
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		z-index: 2
+		margin: 142px auto 0
+
+.home-slider-item
+	position: relative
+	z-index: 1
+	width: 100%
+	height: 100%
+	@include d-flex
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&::before, &:after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+	&::before
+		background: linear-gradient(90deg, #000000 11.81%, #000000 11.81%, rgba(0, 0, 0, 0) 62.15%)
+	&:after
+		background: linear-gradient(89.99deg, rgba(0, 0, 0, 0) 0.01%, #000000 0.01%, rgba(0, 0, 0, 0) 31%)
+		transform: matrix(-1, 0, 0, 1, 0, 0)
+	.bg-overlay
+		position: absolute
+		left: 0
+		bottom: 0
+		height: 292px
+		width: 100%
+		background: linear-gradient(356deg, #000000 11.3%, #000000 11.31%, rgba(0, 0, 0, 0) 97.6%)
+
+.home-numbers
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 32px 0 0
+	font-size: 14px
+	&-item
+		margin: 0 68px 0 0
+		&:last-child
+			margin: 0
+		p
+			font-size: 24px
+			font-weight: 600
+		span
+			color: #ABABAB
+			text-transform: uppercase
+			letter-spacing: 0.02em
+
+.games-logos
+	width: 100%
+	display: flex
+	align-items: stretch
+	justify-content: space-between
+	padding: 24px 0
+
+.game-logo__item
+	@include d-flex
+	transition: .3s ease
+	img
+		transition: .3s ease
+	.img-hover
+		display: none
+		transition: .3s ease
+	&:hover
+		transform: scale(1.05)
+		img
+			display: none
+		.img-hover
+			display: block
+
+// popular-games	
+.popular-games	
+	position: relative
+	z-index: 2
+
+.game-card
+	position: relative
+	z-index: 1
+	width: 100%
+	height: 100%
+	color: #fff
+	border-radius: 16px
+	padding: 24px
+	min-height: 446px
+	overflow: hidden
+	display: flex
+	flex-direction: column
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.92%)
+	&:hover
+		transform: scale(1.04)
+	&__logo
+		margin: 0
+		z-index: 1
+		position: relative
+		width: 56px
+		height: 56px
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover		
+	&__body
+		margin: auto 0 0
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		position: relative
+		z-index: 1
+	&__content
+		display: flex
+		flex-direction: column	
+		max-width: 234px
+		margin: 0 auto 0 0
+		font-weight: 500
+	&__title
+		font-size: 22px
+		font-weight: 600
+		margin: 0 0 4px
+	&__text
+		color: #ABABAB
+		
+
+.btn-all
+	margin: 8px auto 0
+
+.chit-card
+	min-height: 272px			
+
+// .explore-catalog
+.explore-catalog
+	position: relative
+	z-index: 1
+	overflow: hidden
+	&__content
+		text-align: center
+		margin: 48px auto 68px
+		max-width: 475px
+		.box-text
+			margin: 16px auto 32px
+		.btn
+			margin: 0 auto	
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		z-index: -1
+		height: 550px
+		width: 1125px
+		filter: blur(100px)
+		background: linear-gradient(255.19deg, rgba(255, 51, 88, 0) 12.37%, rgba(255, 51, 88, 0.1035) 48.59%, rgba(255, 51, 88, 0.0795) 85.39%)			
+
+.explore-catalog-logos
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	flex-wrap: wrap
+	position: relative
+	z-index: -1
+	max-width: 1000px
+	width: 100%
+	margin: 0 auto
+	&:last-child
+		&::before
+			top: -24px
+			bottom: 0
+			background: linear-gradient(0deg, #000000 11.31%, rgba(0, 0, 0, 0) 97.6%)
+	&::before
+		content: ''
+		position: absolute
+		background: linear-gradient(180deg, #000000 0.02%, rgba(0, 0, 0, 0) 100%)
+		width: 100%
+		max-width: 1284px
+		height: calc(100% + 60px)	 
+		bottom: 24px
+		left: 50%
+		transform: translate(-50%,0)
+	&__item
+		width: 100px
+		height: 100px
+		@include d-flex
+		margin: 0 10px 20px
+		background: linear-gradient(86.51deg, rgba(36, 36, 36, 0.38) 1.68%, rgba(255, 51, 88, 0) 107.33%)
+		border-radius: 16px
+		padding: 20px
+		img
+			width: 100%
+	.line
+		width: 100%
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		flex-wrap: wrap		
