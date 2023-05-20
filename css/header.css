@@ -84,6 +84,9 @@ header .btn {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.btn-language:hover {
+  stroke: #FF3358;
+}
 
 .dropdown {
   position: relative;
@@ -259,6 +262,9 @@ header .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.btn-search:hover {
+  stroke: #FF3358;
 }
 
 .btn-burger {
