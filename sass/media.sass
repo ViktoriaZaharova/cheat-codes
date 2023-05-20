@@ -1,16 +1,294 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
-/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px)
+	.btn-scroll-top
+		right: 78px
+		bottom: 37px
+
+	.col-30
+		padding: 0 12px
+
+	.row
+		margin: 0 -12px
+
 @media only screen and (max-width: 1200px)
+	.nav-menu
+		position: fixed
+		left: 0
+		top: 0
+		overflow-y: auto
+		height: 100%
+		width: 100%
+		max-width: 375px
+		background: rgba(0, 0, 0, 0.85)
+		backdrop-filter: blur(8px)
+		z-index: 7
+		transform: none
+		padding: 72px 24px
+		display: none
+
+	.menu
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		margin: 32px 0 0
+		li
+			margin: 0 0 16px
+			&:last-child
+				margin: 0
+
+	.logo
+		position: relative
+		z-index: 8
+
+	.btn-burger
+		display: flex
+
+	.section-border
+		&::before
+			width: calc(100% - 48px)
 
 @media only screen and (max-width: 992px)
+	.home
+		padding: 132px 0 60px
+		&:after
+			content: ''
+			position: absolute
+			top: 110px
+			right: 58px
+			width: 449px
+			height: 331px
+			background: #FF3358
+			opacity: 0.25
+			filter: blur(114px)
+			border-radius: 123px
+			z-index: -1
+
+	.home-content
+		max-width: 690px
+		h1
+			max-width: 565px
+		.box-text
+			max-width: none
+
+	.home-slider
+		display: none
+		&__nav
+			display: none
+
+	.games-logos
+		margin: 60px 0 0
+
+	.game-logo__item
+		&:nth-child(7)
+			display: none
+
+	.search-wrapper
+		position: initial
+
+	.search-dropdown
+		top: -2px
+		left: 0
+		transform: none
+		max-width: none
+		min-width: auto
+		width: 100%
+		border-radius: 0
+
+@media only screen and (max-width: 930px)
+	.footer-box
+		margin: 0 100px 0 0
+
+	.game-card__body
+		flex-wrap: wrap
+		.product-row__price
+			margin: 10px 0 0
+
+	.explore-catalog-logos__item
+		width: 79px
+		height: 79px
+		margin: 0 4.5px 9px
 
 @media only screen and (max-width: 768px)
+	.col-30
+		width: 100%
+
+	.games-logos
+		display: none
+
+	.explore-catalog-logos__item
+		&:first-child, &:nth-child(2), &:nth-child(7), &:nth-child(8)
+			display: none
+
+	.explore-catalog-logos
+		&::before
+			height: 82px
+			top: 0
+		.line
+			.explore-catalog-logos__item
+				&:nth-child(3), &:nth-last-child(2)
+					display: none
+				&:nth-child(7), &:nth-child(8)
+					display: flex
+				&:last-child
+					order: -1
+		&:last-child
+			&::before
+				top: auto
+				bottom: 0
+			.explore-catalog-logos__item
+				display: none
+			.line
+				display: none
+			.d-mobile
+				display: flex
+		.line-mobile
+			display: flex
+			.explore-catalog-logos__item
+				display: flex
+				&:nth-child(2), &:last-child
+					display: flex
+
+	.btn-scroll-top
+		right: 16px
+
+	.footer-box
+		margin: 0 0 32px
+		width: 100%
+		h3
+			margin: 0
+		&__title
+			display: flex
+			align-items: center
+			&.open
+				&:after
+					transform: rotate(180deg)
+			&::after
+				content: ''
+				width: 20px
+				height: 20px
+				margin: 0 0 0 6px
+				background: url('../img/arrow-bottom.svg') no-repeat center
+				background-size: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+		&:last-child
+			margin: 0
+
+	.footer-top
+		padding: 60px 0
+
+	.footer-menu
+		display: none
+		margin: 16px 0 0
+
+	.list-social
+		margin: 16px 0 0
 
 @media only screen and (max-width: 576px)
+	header
+		padding: 20px 0
+		.btn-group
+			display: none
 
-@media only screen and (max-width: 480px)
+		.nav-menu
+			.btn-group
+				margin: 32px 0 0
+				display: flex
+				.btn
+					width: 100%
+					margin: 0 0 16px
+					height: 48px
+
+	.search-dropdown
+		top: -20px
+
+	.language-wrapper
+		margin: 0 0 0 20px
+
+	.container
+		padding: 0 16px
+
+	.row
+		margin: 0 -16px
+
+	.col-30
+		padding: 0 16px
+
+	.home
+		padding: 104px 0 48px
+
+	h1
+		text-align: center
+		font-size: 36px
+
+	.home-content
+		.box-text
+			text-align: center
+		.btn-group
+			justify-content: center
+			.btn
+				width: 100%
+				margin: 0 0 16px
+				&:last-child
+					margin: 0
+
+	.p-60
+		padding: 48px 0
+
+	h2
+		font-size: 24px
+		margin: 0 auto 32px
+
+	.game-card
+		min-height: 380px
+		padding: 16px
+		&__logo
+			width: 48px
+			height: 48px
+		&__title
+			font-size: 18px
+
+	.mb-24
+		margin-bottom: 16px
+
+	.row-bg
+		&::before
+			opacity: 0.24
+			background: #FF3358
+			filter: blur(114px)
+
+	.popular-games
+		.row
+			display: none
+			&:first-child
+				display: flex
+
+	.btn-all
+		margin: 16px auto 0
+
+	.explore-catalog__content
+		margin: 51px auto 60px
+		max-width: 303px
+
 
 @media only screen and (max-width: 420px)
+	.home-numbers-item
+		font-size: 14px
+		margin: 0 auto 0 0
+		&:last-child
+			margin: 0
+		p
+			font-size: 18px
+			margin: 0 0 2px
 
-@media only screen and (max-width: 370px)	
+	.game-card
+		min-height: 204px
+
+	.product-row__name
+		max-width: 207px
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap	
+

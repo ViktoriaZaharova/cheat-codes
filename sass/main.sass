@@ -15,11 +15,14 @@
 .home-slider
 	max-width: 1440px
 	width: 100%
+	height: calc(100% - 159px)
 	position: absolute
 	left: 50%
 	top: 0
 	transform: translate(-50%,0)
 	z-index: -1
+	.slick-list, .slick-track
+		height: 100%
 	&__nav
 		width: 100%
 		display: flex
@@ -78,10 +81,11 @@
 
 .games-logos
 	width: 100%
-	display: flex
-	align-items: stretch
-	justify-content: space-between
 	padding: 24px 0
+	.container
+		align-items: stretch
+		justify-content: space-between
+		flex-wrap: nowrap
 
 .game-logo__item
 	@include d-flex
@@ -99,7 +103,7 @@
 			display: block
 
 // popular-games	
-.popular-games	
+.popular-games
 	position: relative
 	z-index: 2
 
@@ -142,18 +146,17 @@
 		img
 			width: 100%
 			height: 100%
-			object-fit: cover		
+			object-fit: cover
 	&__body
 		margin: auto 0 0
 		width: 100%
 		display: flex
 		align-items: center
-		flex-wrap: wrap
 		position: relative
 		z-index: 1
 	&__content
 		display: flex
-		flex-direction: column	
+		flex-direction: column
 		max-width: 234px
 		margin: 0 auto 0 0
 		font-weight: 500
@@ -163,27 +166,29 @@
 		margin: 0 0 4px
 	&__text
 		color: #ABABAB
-		
 
 .btn-all
 	margin: 8px auto 0
 
 .chit-card
-	min-height: 272px			
+	min-height: 272px
 
 // .explore-catalog
 .explore-catalog
 	position: relative
 	z-index: 1
 	overflow: hidden
+	h2
+		margin: 0 auto
 	&__content
 		text-align: center
 		margin: 48px auto 68px
 		max-width: 475px
 		.box-text
 			margin: 16px auto 32px
+			line-height: 24px
 		.btn
-			margin: 0 auto	
+			margin: 0 auto
 	&::before
 		content: ''
 		position: absolute
@@ -194,7 +199,7 @@
 		height: 550px
 		width: 1125px
 		filter: blur(100px)
-		background: linear-gradient(255.19deg, rgba(255, 51, 88, 0) 12.37%, rgba(255, 51, 88, 0.1035) 48.59%, rgba(255, 51, 88, 0.0795) 85.39%)			
+		background: linear-gradient(255.19deg, rgba(255, 51, 88, 0) 12.37%, rgba(255, 51, 88, 0.1035) 48.59%, rgba(255, 51, 88, 0.0795) 85.39%)
 
 .explore-catalog-logos
 	display: flex
@@ -217,7 +222,7 @@
 		background: linear-gradient(180deg, #000000 0.02%, rgba(0, 0, 0, 0) 100%)
 		width: 100%
 		max-width: 1284px
-		height: calc(100% + 60px)	 
+		height: calc(100% + 60px)
 		bottom: 24px
 		left: 50%
 		transform: translate(-50%,0)
@@ -231,9 +236,16 @@
 		padding: 20px
 		img
 			width: 100%
+	.d-mobile
+		display: none		
 	.line
 		width: 100%
 		display: flex
 		align-items: flex-start
 		justify-content: center
-		flex-wrap: wrap		
+		flex-wrap: wrap
+	.line-mobile
+		width: 100%
+		display: none
+		align-items: flex-start
+		justify-content: center

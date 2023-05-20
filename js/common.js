@@ -36,6 +36,7 @@ $('.form-search input').on('keyup change', function () {
 $('.form-search__close').click(function (e) {
 	e.preventDefault();
 	$('.form-search-result').fadeOut();
+	$('.search-dropdown').fadeOut();
 	$('.form-search__close').css('display', 'none');
 });
 
@@ -45,6 +46,17 @@ $('.home-slider').slick({
 	arrows: false,
 	dots: true,
 	appendDots: '.home-slider__nav',
-	fade: true
+	fade: true,
+	autoplay: true,
+	autoplaySpeed: 10000,
 })
 
+// mobile menu
+$('.btn-burger').click(function () {
+	$(this).toggleClass('click');
+	$('.nav-menu').fadeToggle();
+});
+
+$('.footer-box__title').click(function () {
+	$(this).toggleClass('open').siblings('.footer-menu').slideToggle();
+});

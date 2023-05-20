@@ -26,6 +26,16 @@
 
 	<header>
 		<div class="container">
+
+			<div class="btn-burger">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#burger"></use>
+				</svg>
+				<svg class="svg-icon svg-icon__close">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg>
+			</div>
+
 			<a href="index.html" class="logo">Tankist</a>
 
 			<nav class="nav-menu">
@@ -35,6 +45,10 @@
 					<li><a href="warranty.html">Наши гарантии</a></li>
 					<li><a href="faq.html">FAQ</a></li>
 				</ul>
+				<div class="btn-group">
+					<a href="#entranceModal" class="btn btn-border open_modal">Вход</a>
+					<a href="#registrationModal" class="btn btn-accent open_modal">Регистрация</a>
+				</div>
 			</nav>
 
 			<div class="search-wrapper dropdown">
@@ -107,7 +121,7 @@
 	<main class="home section-border">
 		<div class="container">
 			<div class="home-content">
-				<div class="h1">Огромный выбор <span class="color-accent">читов</span> для ваших игр</div>
+				<h1>Огромный выбор <span class="color-accent">читов</span> для ваших игр</h1>
 				<div class="box-text">
 					<p>Начните играть в свою любимую игру, используя качественные читы, которые позволят вам насладиться
 						комфортной игрой и
@@ -159,8 +173,8 @@
 
 		<div class="home-slider__nav"></div>
 
-		<div class="container">
-			<div class="games-logos">
+		<div class="games-logos">
+			<div class="container">
 				<a href="#" class="game-logo__item">
 					<img src="img/game-logo1.svg" alt="">
 					<img src="img/game-logo1-1.svg" alt="" class="img-hover">
@@ -473,13 +487,15 @@
 				<div class="explore-catalog-logos__item"><img src="img/game-logo21.svg" alt=""></div>
 				<div class="explore-catalog-logos__item"><img src="img/game-logo15.svg" alt=""></div>
 				<div class="explore-catalog-logos__item"><img src="img/game-logo13.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo22.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo19.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo21.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo16.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo11.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo23.svg" alt=""></div>
-				<div class="explore-catalog-logos__item"><img src="img/game-logo12.svg" alt=""></div>
+				<div class="line">
+					<div class="explore-catalog-logos__item"><img src="img/game-logo22.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo19.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo21.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo16.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo11.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo23.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo12.svg" alt=""></div>
+				</div>
 			</div>
 
 			<div class="explore-catalog__content">
@@ -492,6 +508,11 @@
 			</div>
 
 			<div class="explore-catalog-logos">
+				<div class="line-mobile">
+					<div class="explore-catalog-logos__item"><img src="img/game-logo23.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo20.svg" alt=""></div>
+					<div class="explore-catalog-logos__item"><img src="img/game-logo22.svg" alt=""></div>
+				</div>
 				<div class="line">
 					<div class="explore-catalog-logos__item"><img src="img/game-logo12.svg" alt=""></div>
 					<div class="explore-catalog-logos__item"><img src="img/game-logo15.svg" alt=""></div>
@@ -501,7 +522,10 @@
 					<div class="explore-catalog-logos__item"><img src="img/game-logo13.svg" alt=""></div>
 					<div class="explore-catalog-logos__item"><img src="img/game-logo15.svg" alt=""></div>
 				</div>
-				
+				<div class="explore-catalog-logos__item d-mobile"><img src="img/game-logo15.svg" alt=""></div>
+				<div class="explore-catalog-logos__item d-mobile"><img src="img/game-logo13.svg" alt=""></div>
+				<div class="explore-catalog-logos__item d-mobile"><img src="img/game-logo21.svg" alt=""></div>
+				<div class="explore-catalog-logos__item d-mobile"><img src="img/game-logo17.svg" alt=""></div>
 				<div class="explore-catalog-logos__item"><img src="img/game-logo17.svg" alt=""></div>
 				<div class="explore-catalog-logos__item"><img src="img/game-logo22.svg" alt=""></div>
 				<div class="explore-catalog-logos__item"><img src="img/game-logo21.svg" alt=""></div>
@@ -519,7 +543,7 @@
 		<div class="footer-top">
 			<div class="container">
 				<div class="footer-box">
-					<h3>Навигация</h3>
+					<h3 class="footer-box__title">Навигация</h3>
 					<ul class="footer-menu my-ul">
 						<li><a href="#">FAQ & Помощь</a></li>
 						<li><a href="#">Каталог игр</a></li>
@@ -528,7 +552,7 @@
 				</div>
 
 				<div class="footer-box">
-					<h3>Другое</h3>
+					<h3 class="footer-box__title">Другое</h3>
 					<ul class="footer-menu my-ul">
 						<li><a href="#">Наши гарантии</a></li>
 						<li><a href="#">Реферальная программа</a></li>

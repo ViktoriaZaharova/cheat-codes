@@ -15,12 +15,16 @@
 .home-slider {
   max-width: 1440px;
   width: 100%;
+  height: calc(100% - 159px);
   position: absolute;
   left: 50%;
   top: 0;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: -1;
+}
+.home-slider .slick-list, .home-slider .slick-track {
+  height: 100%;
 }
 .home-slider__nav {
   width: 100%;
@@ -114,16 +118,17 @@
 
 .games-logos {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 24px 0;
+}
+.games-logos .container {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 24px 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .game-logo__item {
@@ -235,8 +240,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
   z-index: 1;
 }
@@ -274,6 +277,9 @@
   z-index: 1;
   overflow: hidden;
 }
+.explore-catalog h2 {
+  margin: 0 auto;
+}
 .explore-catalog__content {
   text-align: center;
   margin: 48px auto 68px;
@@ -281,6 +287,7 @@
 }
 .explore-catalog__content .box-text {
   margin: 16px auto 32px;
+  line-height: 24px;
 }
 .explore-catalog__content .btn {
   margin: 0 auto;
@@ -357,6 +364,9 @@
 .explore-catalog-logos__item img {
   width: 100%;
 }
+.explore-catalog-logos .d-mobile {
+  display: none;
+}
 .explore-catalog-logos .line {
   width: 100%;
   display: -webkit-box;
@@ -370,4 +380,14 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.explore-catalog-logos .line-mobile {
+  width: 100%;
+  display: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
