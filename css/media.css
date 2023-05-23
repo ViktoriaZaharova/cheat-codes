@@ -138,55 +138,10 @@
   .games-logos {
     display: none;
   }
-  .explore-catalog-logos__item:first-child, .explore-catalog-logos__item:nth-child(2), .explore-catalog-logos__item:nth-child(7), .explore-catalog-logos__item:nth-child(8) {
-    display: none;
-  }
-  .explore-catalog-logos::before {
-    height: 82px;
-    top: 0;
-  }
-  .explore-catalog-logos .line .explore-catalog-logos__item:nth-child(3), .explore-catalog-logos .line .explore-catalog-logos__item:nth-last-child(2) {
-    display: none;
-  }
-  .explore-catalog-logos .line .explore-catalog-logos__item:nth-child(7), .explore-catalog-logos .line .explore-catalog-logos__item:nth-child(8) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .explore-catalog-logos .line .explore-catalog-logos__item:last-child {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .explore-catalog-logos:last-child::before {
-    top: auto;
-    bottom: 0;
-  }
-  .explore-catalog-logos:last-child .explore-catalog-logos__item {
-    display: none;
-  }
-  .explore-catalog-logos:last-child .line {
-    display: none;
-  }
-  .explore-catalog-logos:last-child .d-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .explore-catalog-logos .line-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .explore-catalog-logos .line-mobile .explore-catalog-logos__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .explore-catalog-logos .line-mobile .explore-catalog-logos__item:nth-child(2), .explore-catalog-logos .line-mobile .explore-catalog-logos__item:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .explore-catalog-logos__item {
+    width: 57px;
+    height: 57px;
+    padding: 15px;
   }
   .btn-scroll-top {
     right: 16px;
@@ -235,6 +190,11 @@
   }
   .footer-menu {
     display: none;
+  }
+  .footer-menu li {
+    margin: 16px 0 0;
+  }
+  .footer-menu li:last-child {
     margin: 16px 0 0;
   }
   .list-social {
@@ -338,6 +298,60 @@
     margin: 51px auto 60px;
     max-width: 303px;
   }
+  .explore-catalog-logos__item {
+    width: 79px;
+    height: 79px;
+  }
+  .explore-catalog-logos__item:first-child, .explore-catalog-logos__item:nth-child(2), .explore-catalog-logos__item:nth-child(7), .explore-catalog-logos__item:nth-child(8) {
+    display: none;
+  }
+  .explore-catalog-logos::before {
+    height: 82px;
+    top: 0;
+  }
+  .explore-catalog-logos .line .explore-catalog-logos__item:nth-child(3), .explore-catalog-logos .line .explore-catalog-logos__item:nth-last-child(2) {
+    display: none;
+  }
+  .explore-catalog-logos .line .explore-catalog-logos__item:nth-child(7), .explore-catalog-logos .line .explore-catalog-logos__item:nth-child(8) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .explore-catalog-logos .line .explore-catalog-logos__item:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .explore-catalog-logos:last-child::before {
+    top: auto;
+    bottom: 0;
+  }
+  .explore-catalog-logos:last-child .explore-catalog-logos__item {
+    display: none;
+  }
+  .explore-catalog-logos:last-child .line {
+    display: none;
+  }
+  .explore-catalog-logos:last-child .d-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .explore-catalog-logos .line-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .explore-catalog-logos .line-mobile .explore-catalog-logos__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .explore-catalog-logos .line-mobile .explore-catalog-logos__item:nth-child(2), .explore-catalog-logos .line-mobile .explore-catalog-logos__item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 @media only screen and (max-width: 420px) {
   .home-numbers-item {
@@ -359,5 +373,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .explore-catalog-logos__item {
+    width: 63px;
+    height: 63px;
   }
 }

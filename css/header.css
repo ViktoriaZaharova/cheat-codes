@@ -92,6 +92,10 @@ header .btn {
   position: relative;
 }
 
+.dropdown-toggle:hover {
+  stroke: #FF3358;
+}
+
 .dropdown-menu {
   position: absolute;
   z-index: 11;

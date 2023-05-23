@@ -290,7 +290,6 @@ a.color-accent:hover {
 .row-bg::before {
   content: "";
   position: absolute;
-  z-index: -1;
   -webkit-filter: blur(114px);
           filter: blur(114px);
   background: rgba(255, 51, 88, 0.18);
