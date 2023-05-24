@@ -277,6 +277,8 @@
 }
 
 .chit-card {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   min-height: 272px;
 }
 
@@ -310,6 +312,7 @@
   z-index: -1;
   height: 550px;
   width: 1125px;
+  will-change: transform;
   -webkit-filter: blur(100px);
           filter: blur(100px);
   background: linear-gradient(255.19deg, rgba(255, 51, 88, 0) 12.37%, rgba(255, 51, 88, 0.1035) 48.59%, rgba(255, 51, 88, 0.0795) 85.39%);
