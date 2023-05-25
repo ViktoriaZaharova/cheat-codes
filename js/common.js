@@ -48,8 +48,8 @@ $('.form-search input').on('keyup change', function () {
 $('.form-search__close').click(function (e) {
 	e.preventDefault();
 	$('.form-search input').val('');
-	// $('.form-search-result').fadeOut();
-	$('.search-dropdown').fadeOut();
+	$('.form-search-result').fadeOut();
+	// $('.search-dropdown').fadeOut();
 	$('.form-search__close').css('display', 'none');
 });
 
