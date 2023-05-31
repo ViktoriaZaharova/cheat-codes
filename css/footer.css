@@ -1,3 +1,9 @@
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 .footer-top {
   padding: 68px 0;
   border-top: 1px solid #292929;
@@ -101,4 +107,10 @@
 .btn-scroll-top:hover {
   background: #313131;
   stroke: #fff;
+}
+
+.btn-scroll-top-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

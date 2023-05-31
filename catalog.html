@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tankist</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<header>
+				<div class="container">
+
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+						<svg class="svg-icon svg-icon__close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+
+					<a href="index.html" class="logo"><span>Cheats.</span>Guru</a>
+
+					<nav class="nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="news.html">Новости</a></li>
+							<li><a href="warranty.html">Наши гарантии</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+						<div class="btn-group">
+							<a href="#entranceModal" class="btn btn-border open_modal">Вход</a>
+							<a href="#registrationModal" class="btn btn-accent open_modal">Регистрация</a>
+						</div>
+					</nav>
+
+					<div class="search-wrapper dropdown">
+						<a href="#" class="btn-search dropdown-toggle">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</a>
+
+						<div class="search-dropdown dropdown-menu">
+							<form method="post" class="form-search">
+								<label>
+									<input type="text" placeholder="Поиск..." name="search">
+								</label>
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+
+								<a href="#" class="form-search__close"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</form>
+
+							<div class="form-search-result">
+								<div class="form-search-result__head">
+									<h3>Результатов 2</h3>
+								</div>
+								<ul class="list-products my-ul">
+									<li>
+										<a href="#" class="product-row">
+											<span class="product-row__logo"><img src="img/game-logo10.svg" alt=""></span>
+											<span class="product-row__name">Counter-Strike: Global Offensive</span>
+											<span class="product-row__price">от 50 ₽</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="product-row">
+											<span class="product-row__logo"><img src="img/game-logo10.svg" alt=""></span>
+											<span class="product-row__name">Counter-Strike: Global Offensive</span>
+											<span class="product-row__price">от 50 ₽</span>
+										</a>
+									</li>
+								</ul>
+
+								<div class="form-search-result__zero text-center">
+									<p>По запросу ничего не найдено</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="language-wrapper dropdown">
+						<a href="#" class="btn-language dropdown-toggle"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#globe"></use>
+							</svg></a>
+
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">ru</a>
+							<a href="#" class="dropdown-item">eng</a>
+						</div>
+					</div>
+					<div class="btn-group">
+						<a href="#entranceModal" class="btn btn-border open_modal">Вход</a>
+						<a href="#registrationModal" class="btn btn-accent open_modal">Регистрация</a>
+					</div>
+				</div>
+			</header>
+
+			<section class="page page-catalog">
+				<div class="container">
+					<div class="title-wrapper">
+						<h1>Каталог игр</h1>
+
+						<form method="post" class="form-search form-search-page">
+							<label>
+								<input type="text" placeholder="Поиск..." name="search">
+							</label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+
+							<a href="#" class="form-search__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</a>
+						</form>
+					</div>
+				</div>
+
+				<div class="games-logos">
+					<div class="container">
+						<a href="#" class="game-logo__item">
+							<img src="img/game-logo1.svg" alt="">
+							<img src="img/game-logo1-1.svg" alt="" class="img-hover">
+						</a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo2.svg" alt="">
+							<img src="img/game-logo2-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo3.svg" alt="">
+							<img src="img/game-logo3-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo4.svg" alt="">
+							<img src="img/game-logo4-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo5.svg" alt="">
+							<img src="img/game-logo5-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo6.svg" alt="">
+							<img src="img/game-logo6-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo7.svg" alt="">
+							<img src="img/game-logo7-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo8.svg" alt="">
+							<img src="img/game-logo8-1.svg" alt="" class="img-hover"></a>
+						<a href="#" class="game-logo__item"><img src="img/game-logo9.svg" alt="">
+							<img src="img/game-logo9-1.svg" alt="" class="img-hover"></a>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="w-100">
+						<div class="row row-bg">
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo11.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game1.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Counter-Strike: Global Offensive</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo12.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game2.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">PUBG</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo13.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game3.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Dead by Daylight</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo14.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game3.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Dead by Daylight</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo15.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game4.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">WarFace</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo16.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game2.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">PUBG</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="row row-bg">
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo13.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game2.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">PUBG</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo14.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game3.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Dead by Daylight</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo17.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game5.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Counter-Strike: Global Offensive</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo14.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game3.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Dead by Daylight</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo15.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game4.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">WarFace</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo16.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game2.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">PUBG</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="row row-bg">
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo13.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game2.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">PUBG</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo14.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game3.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Dead by Daylight</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-30 mb-24">
+								<a href="#" class="game-card">
+									<span class="game-card__logo product-row__logo"><img src="img/game-logo17.svg" alt=""></span>
+									<span class="game-card__img"><img src="img/game5.jpg" alt=""></span>
+									<div class="game-card__body">
+										<span class="game-card__content">
+											<span class="game-card__title">Counter-Strike: Global Offensive</span>
+											<span class="game-card__text">16 продуктов</span>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-box">
+						<h3 class="footer-box__title">Навигация</h3>
+						<ul class="footer-menu my-ul">
+							<li><a href="#">FAQ & Помощь</a></li>
+							<li><a href="#">Каталог игр</a></li>
+							<li><a href="#">Магазин аккаунтов</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3 class="footer-box__title">Другое</h3>
+						<ul class="footer-menu my-ul">
+							<li><a href="#">Наши гарантии</a></li>
+							<li><a href="#">Реферальная программа</a></li>
+							<li><a href="#">Скидки</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Подпишись на нас</h3>
+
+						<ul class="list-social my-ul">
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social1"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social2"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social3"></use>
+									</svg></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="copyright">© 2023 Copyright</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+
+	<a href="#" class="btn-scroll-top btn-scroll-top-all"><svg class="svg-icon">
+			<use xlink:href="img/sprite.svg#arrow-top"></use>
+		</svg></a>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

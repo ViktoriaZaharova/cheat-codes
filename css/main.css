@@ -214,6 +214,9 @@
   width: 56px;
   height: 56px;
 }
+.game-card__logo img {
+  max-height: 100%;
+}
 .game-card__img {
   position: absolute;
   left: 0;
@@ -401,4 +404,59 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.page-catalog {
+  padding: 132px 0 36px;
+}
+.page-catalog .games-logos {
+  margin: 0 0 60px;
+}
+
+.form-search-page {
+  background: #292929;
+  border-radius: 16px;
+  padding: 12px 20px;
+  max-width: 412px;
+  width: 100%;
+}
+
+.reslut-search-text {
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.page-product .games-logos {
+  margin: 36px 0 60px;
+}
+
+.products-all-title {
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 32px;
+}
+
+.products-details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.products-details__image {
+  position: relative;
+  width: 488px;
+}
+.products-details__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

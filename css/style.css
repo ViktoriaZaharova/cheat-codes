@@ -53,6 +53,23 @@ html, body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -386,36 +403,66 @@ h2 {
   background: #292929;
 }
 
-.label-checkbox {
-  position: relative;
+.page {
+  padding: 120px 0 0;
+}
+
+.title-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 60px;
+}
+.title-wrapper h1 {
+  margin: 0 auto 0 0;
+  width: auto;
+}
+
+.breadcrumb {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #ABABAB;
+  margin: 0 0 32px;
 }
-
-.inp-check {
+.breadcrumb li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumb li:last-child::after {
   display: none;
 }
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
+.breadcrumb li:after {
+  content: "/";
+  display: inline-block;
+  margin: 0 8px;
+  color: #fff;
 }
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.breadcrumb li a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumb li a:hover {
+  color: #FF3358;
 }
