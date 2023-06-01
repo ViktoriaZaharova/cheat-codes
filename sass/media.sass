@@ -53,7 +53,7 @@
 		display: none
 		&__nav
 			display: none
-			
+
 @media only screen and (max-width: 992px)
 	.home
 		padding: 132px 0 60px
@@ -77,8 +77,6 @@
 		.box-text
 			max-width: none
 
-	
-
 	.games-logos
 		margin: 60px 0 0
 
@@ -98,6 +96,12 @@
 		width: 100%
 		border-radius: 0
 
+	.col-40
+		width: 42%
+
+	.col-60
+		width: 58%
+
 @media only screen and (max-width: 930px)
 	.footer-box
 		margin: 0 100px 0 0
@@ -113,7 +117,7 @@
 		margin: 0 4.5px 9px
 
 	.form-search-page
-		max-width: 300px	
+		max-width: 300px
 
 @media only screen and (max-width: 768px)
 	.col-30
@@ -134,16 +138,28 @@
 		padding: 60px 0
 
 	.footer-box
-		margin: 0 40px 0 0	
+		margin: 0 40px 0 0
 
 	.list-social
 		margin: 16px 0 0
 
 	.title-wrapper
-		margin: 0 0 32px	
+		margin: 0 0 32px
 
 	.form-search-page
 		max-width: 270px
+
+	.col-40, .col-60
+		width: 100%
+
+	.product-gallery
+		margin: 0 0 32px
+
+	.system-requirements
+		margin: 32px 0 0
+
+	.product-gallery__item
+		height: 384px
 
 @media only screen and (max-width: 650px)
 	.footer-box
@@ -152,11 +168,54 @@
 			margin: 30px 0 0
 
 	.form-search-page
-		max-width: none	
+		max-width: none
 		margin: 16px 0 0
 
 	.page-catalog
-		padding: 104px 0 44px	
+		padding: 104px 0 44px
+
+	.products-details
+		margin: 0 0 32px
+		&__image
+			width: 100%
+		&__content
+			width: 100%
+			padding: 24px 16px
+			&-head
+				margin: 0
+				&:after
+					content: ''
+					display: flex
+					align-items: center
+					justify-content: center
+					margin: 0 0 0 auto
+					background: url('../img/arrow-bottom.svg') no-repeat center
+					background-size: 100%
+					width: 24px
+					height: 24px
+					filter: brightness(0) invert(1)
+				&.open
+					&:after
+						transform: rotate(180deg)
+			&-body
+				margin: 16px 0 0
+				display: none
+		h1
+			font-size: 24px
+		.game-card__logo
+			width: 56px
+			height: 56px
+			top: 16px
+			left: 16px
+
+	.products-all-title
+		margin: 0 0 24px
+
+	.list-tags
+		li
+			display: none
+			&:nth-child(-n+5)
+				display: block
 
 @media only screen and (max-width: 590px)
 	.nav-menu
@@ -315,7 +374,77 @@
 
 	.reslut-search-text
 		text-align: left
-		font-size: 18px			
+		font-size: 18px
+
+	.product-gallery__item
+		height: 224px
+
+	.product-gallery-preview
+		.slick-slide
+			margin: 0 16px 0 0
+		.product-gallery__item
+			width: 134px
+			height: 84px
+
+	.product-gallery-max
+		.slick-arrow
+			display: none
+
+	.page-chit h1
+		text-align: left
+		margin: 0 0 24px
+
+	.logo-game-company
+		font-size: 18px
+
+	.page-chit-description
+		padding: 32px 0 0
+		margin: 32px 0 0
+
+	.page-chit-box
+		&__head
+			padding: 24px 16px
+			h3
+				font-size: 22px
+		&__body
+			padding: 0 16px 24px
+		&__footer
+			padding: 0 16px 24px
+
+	.chit-characteristics
+		padding: 24px 16px
+
+	.chit-characteristics-item
+		margin: 0 0 24px
+		padding: 0 0 12px
+		&:first-child
+			padding: 0 0 24px
+
+	.system-requirements-box		
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+
+	.modal__wrapper
+		margin: 0 auto
+		border-radius: 0
+		height: 100%
+		position: relative
+		padding: 40px 0 0
+		.subtitle
+			font-size: 18px
+
+	.modal__close	
+		top: 18px
+		right: 18px
+
+	.modal__head
+		position: initial
+		padding: 32px 15px
+
+	.modal__body
+		padding: 32px 15px	
+
 
 @media only screen and (max-width: 420px)
 	.home-numbers-item

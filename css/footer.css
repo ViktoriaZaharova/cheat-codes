@@ -114,3 +114,105 @@ footer {
   display: -ms-flexbox;
   display: flex;
 }
+
+.overlay {
+  z-index: 100;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.85;
+  -moz-opacity: 0.85;
+  filter: alpha(opacity=85);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.modal__div {
+  position: fixed;
+  max-width: 613px;
+  width: 100%;
+  height: 100%;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  overflow: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  opacity: 0;
+}
+
+.modal__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 36px;
+  height: 36px;
+  background: #313131;
+  stroke: #fff;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.modal__head {
+  width: 100%;
+  position: relative;
+  padding: 32px;
+  border-bottom: 1px solid #313131;
+}
+
+.modal__body {
+  padding: 32px;
+}
+
+.modal__wrapper {
+  background: #292929;
+  color: #fff;
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin: 50px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.modal__wrapper h2 {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 4px;
+}
+.modal__wrapper .subtitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.form [type=submit] {
+  width: 100%;
+  padding: 16px 24px;
+}

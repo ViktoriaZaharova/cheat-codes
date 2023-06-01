@@ -115,6 +115,12 @@
     width: 100%;
     border-radius: 0;
   }
+  .col-40 {
+    width: 42%;
+  }
+  .col-60 {
+    width: 58%;
+  }
 }
 @media only screen and (max-width: 930px) {
   .footer-box {
@@ -166,6 +172,18 @@
   .form-search-page {
     max-width: 270px;
   }
+  .col-40, .col-60 {
+    width: 100%;
+  }
+  .product-gallery {
+    margin: 0 0 32px;
+  }
+  .system-requirements {
+    margin: 32px 0 0;
+  }
+  .product-gallery__item {
+    height: 384px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .footer-box:last-child {
@@ -178,6 +196,64 @@
   }
   .page-catalog {
     padding: 104px 0 44px;
+  }
+  .products-details {
+    margin: 0 0 32px;
+  }
+  .products-details__image {
+    width: 100%;
+  }
+  .products-details__content {
+    width: 100%;
+    padding: 24px 16px;
+  }
+  .products-details__content-head {
+    margin: 0;
+  }
+  .products-details__content-head:after {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 0 auto;
+    background: url("../img/arrow-bottom.svg") no-repeat center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  .products-details__content-head.open:after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .products-details__content-body {
+    margin: 16px 0 0;
+    display: none;
+  }
+  .products-details h1 {
+    font-size: 24px;
+  }
+  .products-details .game-card__logo {
+    width: 56px;
+    height: 56px;
+    top: 16px;
+    left: 16px;
+  }
+  .products-all-title {
+    margin: 0 0 24px;
+  }
+  .list-tags li {
+    display: none;
+  }
+  .list-tags li:nth-child(-n+5) {
+    display: block;
   }
 }
 @media only screen and (max-width: 590px) {
@@ -385,6 +461,79 @@
   .reslut-search-text {
     text-align: left;
     font-size: 18px;
+  }
+  .product-gallery__item {
+    height: 224px;
+  }
+  .product-gallery-preview .slick-slide {
+    margin: 0 16px 0 0;
+  }
+  .product-gallery-preview .product-gallery__item {
+    width: 134px;
+    height: 84px;
+  }
+  .product-gallery-max .slick-arrow {
+    display: none;
+  }
+  .page-chit h1 {
+    text-align: left;
+    margin: 0 0 24px;
+  }
+  .logo-game-company {
+    font-size: 18px;
+  }
+  .page-chit-description {
+    padding: 32px 0 0;
+    margin: 32px 0 0;
+  }
+  .page-chit-box__head {
+    padding: 24px 16px;
+  }
+  .page-chit-box__head h3 {
+    font-size: 22px;
+  }
+  .page-chit-box__body {
+    padding: 0 16px 24px;
+  }
+  .page-chit-box__footer {
+    padding: 0 16px 24px;
+  }
+  .chit-characteristics {
+    padding: 24px 16px;
+  }
+  .chit-characteristics-item {
+    margin: 0 0 24px;
+    padding: 0 0 12px;
+  }
+  .chit-characteristics-item:first-child {
+    padding: 0 0 24px;
+  }
+  .system-requirements-box {
+    margin: 0 0 16px;
+  }
+  .system-requirements-box:last-child {
+    margin: 0;
+  }
+  .modal__wrapper {
+    margin: 0 auto;
+    border-radius: 0;
+    height: 100%;
+    position: relative;
+    padding: 40px 0 0;
+  }
+  .modal__wrapper .subtitle {
+    font-size: 18px;
+  }
+  .modal__close {
+    top: 18px;
+    right: 18px;
+  }
+  .modal__head {
+    position: initial;
+    padding: 32px 15px;
+  }
+  .modal__body {
+    padding: 32px 15px;
   }
 }
 @media only screen and (max-width: 420px) {

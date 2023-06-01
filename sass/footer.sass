@@ -1,7 +1,7 @@
 @import "vars"
 
 footer
-	flex: 0 0 auto	
+	flex: 0 0 auto
 
 .footer-top
 	padding: 68px 0
@@ -18,7 +18,7 @@ footer
 		color: #ABABAB
 		margin: 0 0 16px
 		text-transform: uppercase
-			
+
 .footer-menu
 	li
 		margin: 0 0 16px
@@ -27,7 +27,7 @@ footer
 		a
 			color: #fff
 			&:hover
-				color: $accent	
+				color: $accent
 
 .list-social
 	display: flex
@@ -45,7 +45,7 @@ footer
 			background: #fff
 			padding: 6px
 			fill: #000
-			@include d-flex							
+			@include d-flex
 			&:hover
 				fill: #fff
 				background: #000
@@ -55,7 +55,7 @@ footer
 
 .copyright
 	color: #626262
-	font-size: 14px		
+	font-size: 14px
 
 .btn-scroll-top
 	position: fixed
@@ -76,4 +76,81 @@ footer
 		stroke: #fff
 
 .btn-scroll-top-all
-	display: flex		
+	display: flex
+
+.overlay
+	z-index: 100
+	position: fixed
+	background-color: #000
+	opacity: 0.85
+	-moz-opacity: 0.85
+	filter: alpha(opacity = 85)
+	backdrop-filter: blur(2px)
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	cursor: pointer
+	display: none
+
+.modal__div
+	position: fixed
+	max-width: 613px
+	width: 100%
+	height: 100%
+	top: 45%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 101
+	overflow: auto
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	display: none
+	opacity: 0
+
+.modal__close
+	@include d-flex
+	border-radius: 50%
+	position: absolute
+	right: 32px
+	top: 32px
+	width: 36px
+	height: 36px
+	background: #313131
+	stroke: #fff
+	padding: 6px
+	cursor: pointer
+
+.modal__head
+	width: 100%
+	position: relative
+	padding: 32px
+	border-bottom: 1px solid #313131
+
+.modal__body	
+	padding: 32px
+
+
+.modal__wrapper
+	background: #292929
+	color: #fff
+	border-radius: 16px
+	width: 100%
+	height: auto
+	overflow: auto
+	margin: 50px auto
+	box-sizing: border-box
+	position: relative
+	h2
+		width: 100%
+		text-align: left
+		margin: 0 0 4px
+	.subtitle
+		font-size: 22px
+		font-weight: 600
+
+.form
+	[type="submit"]
+		width: 100%
+		padding: 16px 24px

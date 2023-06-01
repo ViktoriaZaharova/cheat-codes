@@ -75,3 +75,65 @@ $('.btn-burger').click(function () {
 $('.footer-box__title').click(function () {
 	$(this).toggleClass('open').siblings('.footer-menu').slideToggle();
 });
+
+$('.products-details__content-head').click(function () {
+	$(this).toggleClass('open').siblings('.products-details__content-body').slideToggle();
+});
+
+$('.product-gallery-max').slick({
+	slidesToShow: 1,
+	fade: true,
+	asNavFor: '.product-gallery-preview',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+});
+
+$('.product-gallery-preview').slick({
+	slidesToShow: 5,
+	asNavFor: '.product-gallery-max',
+	arrows: false,
+	focusOnSelect: true,
+	variableWidth: true,
+});
+
+
+// модальные окна (несколько)
+$(function () {
+	let overlay = $('.overlay'),
+		open_modal = $('.open_modal'),
+		close = $('.modal__close, .overlay'),
+		modal = $('.modal__div');
+
+	open_modal.on('click', function (event) {
+		event.preventDefault();
+
+		modal.css('display', 'none').animate({
+			opacity: 0,
+			top: '45%'
+		}, 200);
+
+		let div = $(this).attr('href');
+		overlay.fadeIn(400,
+			function () {
+				$(div)
+					.css('display', 'flex')
+					.animate({
+						opacity: 1,
+						top: '50%'
+					}, 200);
+			});
+	});
+
+	close.on('click', function () {
+		modal
+			.animate({
+				opacity: 0,
+				top: '45%'
+			}, 200,
+				function () {
+					$(this).css('display', 'none');
+					overlay.fadeOut(400);
+				}
+			);
+	});
+});

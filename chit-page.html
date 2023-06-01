@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tankist</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<header>
+				<div class="container">
+
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+						<svg class="svg-icon svg-icon__close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+
+					<a href="index.html" class="logo"><span>Cheats.</span>Guru</a>
+
+					<nav class="nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="news.html">Новости</a></li>
+							<li><a href="warranty.html">Наши гарантии</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+						<div class="btn-group">
+							<a href="#entranceModal" class="btn btn-border open_modal">Вход</a>
+							<a href="#registrationModal" class="btn btn-accent open_modal">Регистрация</a>
+						</div>
+					</nav>
+
+					<div class="search-wrapper dropdown">
+						<a href="#" class="btn-search dropdown-toggle">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</a>
+
+						<div class="search-dropdown dropdown-menu">
+							<form method="post" class="form-search">
+								<label>
+									<input type="text" placeholder="Поиск..." name="search">
+								</label>
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+
+								<a href="#" class="form-search__close"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</form>
+
+							<div class="form-search-result">
+								<div class="form-search-result__head">
+									<h3>Результатов 2</h3>
+								</div>
+								<ul class="list-products my-ul">
+									<li>
+										<a href="#" class="product-row">
+											<span class="product-row__logo"><img src="img/game-logo10.svg" alt=""></span>
+											<span class="product-row__name">Counter-Strike: Global Offensive</span>
+											<span class="product-row__price">от 50 ₽</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="product-row">
+											<span class="product-row__logo"><img src="img/game-logo10.svg" alt=""></span>
+											<span class="product-row__name">Counter-Strike: Global Offensive</span>
+											<span class="product-row__price">от 50 ₽</span>
+										</a>
+									</li>
+								</ul>
+
+								<div class="form-search-result__zero text-center">
+									<p>По запросу ничего не найдено</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="language-wrapper dropdown">
+						<a href="#" class="btn-language dropdown-toggle"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#globe"></use>
+							</svg></a>
+
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">ru</a>
+							<a href="#" class="dropdown-item">eng</a>
+						</div>
+					</div>
+					<div class="btn-group">
+						<a href="#entranceModal" class="btn btn-border open_modal">Вход</a>
+						<a href="#registrationModal" class="btn btn-accent open_modal">Регистрация</a>
+					</div>
+				</div>
+			</header>
+
+			<section class="page page-chit">
+				<div class="container">
+					<ul class="breadcrumb my-ul">
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="game-page.html">Pubg</a></li>
+						<li><span>Steals chams</span></li>
+					</ul>
+
+					<div class="logo-game-company">
+						<img src="img/game-logo13.svg" alt="">
+						<span>PUBG: Battlegrounds</span>
+					</div>
+
+					<h1>Steals chams</h1>
+
+					<div class="page-chit-information">
+						<div class="w-100">
+							<div class="row">
+								<div class="col-60">
+									<div class="product-gallery">
+										<div class="product-gallery-max">
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/slide2.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game4.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game3.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game5.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game3.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game4.jpg" alt=""></div>
+											</div>
+										</div>
+
+										<div class="product-gallery-preview">
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/slide2.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game4.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game3.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game5.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game3.jpg" alt=""></div>
+											</div>
+											<div class="slide">
+												<div class="product-gallery__item"><img src="img/game4.jpg" alt=""></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-40">
+									<div class="page-chit-box checkout-box">
+										<div class="page-chit-box__head">
+											<h3>Оформление заказа</h3>
+										</div>
+										<div class="page-chit-box__body">
+											<label class="label-radio">
+												<input type="radio" name="radio" class="inp-radio">
+												<span class="label-radio__custom"></span>
+												<span class="label-radio__text">
+													<span class="page-chit-box__days">1 день</span>
+													<span class="page-chit-box__price">350 ₽</span>
+												</span>
+											</label>
+											<label class="label-radio">
+												<input type="radio" name="radio" class="inp-radio">
+												<span class="label-radio__custom"></span>
+												<span class="label-radio__text">
+													<span class="page-chit-box__days">3 дня</span>
+													<span class="page-chit-box__price">650 ₽</span>
+												</span>
+											</label>
+											<label class="label-radio">
+												<input type="radio" name="radio" class="inp-radio" checked>
+												<span class="label-radio__custom"></span>
+												<span class="label-radio__text">
+													<span class="page-chit-box__days">7 дней</span>
+													<span class="page-chit-box__price">1 500 ₽</span>
+												</span>
+											</label>
+											<label class="label-radio">
+												<input type="radio" name="radio" class="inp-radio">
+												<span class="label-radio__custom"></span>
+												<span class="label-radio__text">
+													<span class="page-chit-box__days">30 дней</span>
+													<span class="page-chit-box__price">2 000 ₽</span>
+												</span>
+											</label>
+
+										</div>
+										<div class="page-chit-box__footer">
+											<a href="#modal1" class="btn btn-accent btn-order open_modal">Перейти к оплате</a>
+											<label class="checkbox">
+												<input type="checkbox" name="checkbox" class="inp-check" checked>
+												<span class="checkbox-custom"></span>
+												<span class="checkbox-text">Я согласен с <a href="#"
+														class="color-accent d-inline">пользовательским соглашением</a></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="page-chit-description">
+						<div class="w-100">
+							<div class="row">
+								<div class="col-60">
+									<div class="page-chit-box chit-characteristics">
+										<div class="chit-characteristics-item">
+											<div class="page-chit-box__head">
+												<h3>Описание</h3>
+											</div>
+											<div class="page-chit-box__body">
+												<div class="box-text">
+													<p>Dullwave — ПО было специально разработано для таких игр как: Call of Duty: Modern Warfare
+														II и Warzone 2.0. Этот
+														чит
+														даст вам возможность доминирования над противниками, благодаря своему качественному
+														функционалу.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="chit-characteristics-item">
+											<div class="page-chit-box__head">
+												<h3>Функционал</h3>
+											</div>
+											<div class="page-chit-box__body">
+												<div class="page-chit-box__subtitle tooltip-wrapper">
+
+													<div class="page-chit-box__subtitle-name">
+														<div class="page-chit-box__subtitle-icon"><img src="img/prod-icon1.svg" alt=""></div>
+														<h4>AIMBOT</h4>
+													</div>
+
+													<div class="tooltip-box">
+														<p>Aimbot - это функция, позволяющая тем или иным образом легче попадать в противника</p>
+													</div>
+												</div>
+
+
+												<ul class="list-tags my-ul">
+													<li><a href="#" class="tooltip-wrapper">Enable
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Setupable FOV
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse invisible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse visible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Setupable FOV
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Enable
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse invisible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse visible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+												</ul>
+
+											</div>
+										</div>
+
+										<div class="chit-characteristics-item">
+
+											<div class="page-chit-box__body">
+												<div class="page-chit-box__subtitle tooltip-wrapper">
+
+													<div class="page-chit-box__subtitle-name">
+														<div class="page-chit-box__subtitle-icon"><img src="img/prod-icon2.svg" alt=""></div>
+														<h4>ESP</h4>
+													</div>
+
+													<div class="tooltip-box">
+														<p>Aimbot - это функция, позволяющая тем или иным образом легче попадать в противника</p>
+													</div>
+												</div>
+
+												<ul class="list-tags my-ul">
+													<li><a href="#" class="tooltip-wrapper">Enable
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Setupable FOV
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse invisible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse visible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Setupable FOV
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Enable
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse invisible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse visible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+												</ul>
+
+											</div>
+										</div>
+
+										<div class="chit-characteristics-item">
+											<div class="page-chit-box__body">
+												<div class="page-chit-box__subtitle tooltip-wrapper">
+
+													<div class="page-chit-box__subtitle-name">
+														<div class="page-chit-box__subtitle-icon"><img src="img/prod-icon3.svg" alt=""></div>
+														<h4>Radar</h4>
+													</div>
+
+													<div class="tooltip-box">
+														<p>Aimbot - это функция, позволяющая тем или иным образом легче попадать в противника</p>
+													</div>
+												</div>
+
+
+												<ul class="list-tags my-ul">
+													<li><a href="#" class="tooltip-wrapper">Enable
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Setupable FOV
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse invisible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse visible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Setupable FOV
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Enable
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse invisible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Pulse visible only
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+													<li><a href="#" class="tooltip-wrapper">Thickness
+															<span class="tooltip-box">
+																<p>Плюс невидимость только</p>
+															</span>
+														</a></li>
+												</ul>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-40">
+									<div class="page-chit-box system-requirements">
+										<div class="page-chit-box__head">
+											<h3>Системные требования</h3>
+										</div>
+										<div class="page-chit-box__body">
+											<div class="system-requirements-box">
+												<h4>Поддерживаемые OC</h4>
+												<ul class="system-requirements-list my-ul">
+													<li>Windows 10 (1809-21H2)</li>
+												</ul>
+											</div>
+											<div class="system-requirements-box">
+												<h4>Поддерживаемые процессоры</h4>
+												<ul class="system-requirements-list my-ul">
+													<li>AMD</li>
+													<li>Intel</li>
+												</ul>
+											</div>
+											<div class="system-requirements-box">
+												<h4>Игровой режим</h4>
+												<ul class="system-requirements-list my-ul">
+													<li>Оконный</li>
+													<li>Без рамок</li>
+												</ul>
+											</div>
+											<div class="system-requirements-box">
+												<h4>Поддерживаемые сборки</h4>
+												<ul class="system-requirements-list my-ul">
+													<li>1903(18362)</li>
+													<li>20H2 (19042)</li>
+													<li>21H1(19043)</li>
+													<li>21H2 build 22000</li>
+													<li>1909(18363)</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-box">
+						<h3 class="footer-box__title">Навигация</h3>
+						<ul class="footer-menu my-ul">
+							<li><a href="#">FAQ & Помощь</a></li>
+							<li><a href="#">Каталог игр</a></li>
+							<li><a href="#">Магазин аккаунтов</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3 class="footer-box__title">Другое</h3>
+						<ul class="footer-menu my-ul">
+							<li><a href="#">Наши гарантии</a></li>
+							<li><a href="#">Реферальная программа</a></li>
+							<li><a href="#">Скидки</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Подпишись на нас</h3>
+
+						<ul class="list-social my-ul">
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social1"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social2"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social3"></use>
+									</svg></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="copyright">© 2023 Copyright</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<div class="modal__div" id="modal1">
+		<div class="modal__wrapper">
+			<div class="modal__head">
+				<div class="modal__close"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></div>
+				<h2>Чит Steals chams</h2>
+				<div class="subtitle">Для игры War Thunder на 7 дней</div>
+			</div>
+			<div class="modal__body">
+				<form method="post" class="form">
+					<label>
+						<div class="input-title">Введите свой Email для отправки данных</div>
+						<input type="text" name="mail" required>
+					</label>
+
+					<button type="submit" class="btn btn-accent" disabled>Оплатить</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+
+	<a href="#" class="btn-scroll-top btn-scroll-top-all"><svg class="svg-icon">
+			<use xlink:href="img/sprite.svg#arrow-top"></use>
+		</svg></a>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

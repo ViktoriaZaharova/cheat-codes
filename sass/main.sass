@@ -278,12 +278,12 @@
 	text-align: center
 	width: 100%
 	font-size: 22px
-	font-weight: 600	
+	font-weight: 600
 
 // page product
 .page-product
 	.games-logos
-		margin: 36px 0 60px		
+		margin: 36px 0 60px
 
 .products-all-title
 	width: 100%
@@ -294,12 +294,254 @@
 .products-details
 	width: 100%
 	display: flex
-	align-items: flex-start
+	align-items: stretch
 	flex-wrap: wrap
+	background: #181818
+	border-radius: 16px
+	margin: 0 0 60px
 	&__image
 		position: relative
-		width: 488px
+		width: 50%
+		border-radius: 16px 0 0 16px
 		img
 			width: 100%
 			height: 100%
 			object-fit: cover
+			border-radius: 16px 0 0 16px
+	.game-card__logo
+		position: absolute
+		top: 32px
+		left: 32px
+		width: 68px
+		height: 68px
+		padding: 12px
+		img
+			height: auto
+			object-fit: contain
+			border-radius: 0
+	&__content
+		width: 50%
+		padding: 32px 25px 40px 32px
+		&-head
+			width: 100%
+			display: flex
+			align-items: center
+			margin: 0 0 12px
+		.box-text
+			line-height: 24px
+	h1
+		font-size: 36px
+		margin: 0
+		width: fit-content
+		text-align: left
+
+.list-tags
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 24px 0 0
+	font-size: 14px
+	line-height: 24px
+	li
+		margin: 0	7px 12px 0
+		&:last-child
+			margin: 0 0 8px
+		a
+			color: #ABABAB
+			padding: 4px 12px
+			background: #292929
+			border-radius: 50px
+			&:hover
+				background: #4E4E4E
+				color: #fff
+	.tooltip-box
+		min-width: 211px
+		max-width: 211px
+		left: 10%
+
+// chit-page
+.page-chit
+	margin: 0 0 60px
+	h1
+		margin: 0 0 32px
+
+.logo-game-company
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 6px
+	font-size: 22px
+	font-weight: 600
+	img
+		margin: 0 10px 0 0
+		max-width: 44px
+
+.product-gallery
+	width: 100%
+	&__item
+		width: 100%
+		height: 395px
+		border-radius: 16px
+		@include d-flex
+		img
+			border-radius: 16px
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.product-gallery-preview
+	margin: 16px 0 0
+	.product-gallery__item
+		width: 159px
+		height: 98px
+		cursor: pointer
+		border: 1.5px solid transparent
+	.slick-slide
+		margin: 0 8px 0 0
+	.slick-current
+		.product-gallery__item
+			border: 1.5px solid #FF3358
+
+
+.page-chit-information
+	width: 100%
+
+.page-chit-description
+	margin: 60px 0 0
+	padding: 60px 0 0
+	width: 100%
+	border-top: 1px solid #292929
+
+.page-chit-box
+	width: 100%
+	background: #181818
+	border-radius: 16px
+	&__head
+		padding: 32px 32px 8px
+		h3
+			font-size: 24px
+			font-weight: 600
+	&__body
+		padding: 24px 32px 32px
+	&__footer
+		padding: 8px 32px 32px
+	&__days
+		font-weight: 500
+		margin: 0 auto 0 0
+	&__price
+		font-weight: 500
+	&__subtitle
+		display: flex
+		align-items: center
+		justify-content: start
+		width: fit-content
+		&-icon
+			margin: 0 12px 0 0
+			width: 36px
+			height: 36px
+			min-width: 36px
+			@include d-flex
+			background: #313131
+			border-radius: 50%
+			padding: 6px
+		&-name
+			display: flex
+			align-items: center
+		h4
+			font-size: 18px
+			font-weight: 600
+
+.btn-order
+	width: 100%
+	padding: 16px
+
+.system-requirements-box
+	width: 100%
+	margin: 0 0 24px
+	&:last-child
+		margin: 0
+	h4
+		letter-spacing: 0.02em
+		margin: 0 0 8px
+		font-size: 14px
+		text-transform: uppercase
+		color: #ABABAB
+
+.system-requirements-list
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		display: flex
+		align-items: center
+		margin: 0 0 8px
+		&:last-child
+			&:after
+				display: none
+		&:after
+			content: '|'
+			display: inline-block
+			margin: 0 8px
+			color: #626262
+
+.chit-characteristics
+	padding: 32px
+	.page-chit-box__head
+		padding: 0
+		margin: 0 0 24px
+	.page-chit-box__body
+		padding: 0
+		.box-text
+			line-height: 24px
+
+.chit-characteristics-item
+	margin: 0 0 32px
+	padding: 0 0 20px
+	border-bottom: 1px solid #292929
+	&:first-child
+		padding: 0 0 32px
+	&:last-child
+		padding: 0
+		margin: 0
+		border: none
+	.list-tags
+		font-size: 12px
+		line-height: 18px
+		margin: 16px 0 0
+
+.tooltip-wrapper
+	position: relative
+	cursor: pointer
+	&:hover
+		.tooltip-box
+			display: block
+
+.tooltip-box
+	background: #4E4E4E
+	backdrop-filter: blur(65.5px)
+	border-radius: 16px
+	position: absolute
+	z-index: 1
+	left: 30%
+	bottom: 100%
+	margin: 0 0 13px
+	min-width: 378px
+	max-width: 378px
+	padding: 8px 16px
+	font-size: 14px
+	line-height: 24px
+	display: none
+	transition: .3s ease
+	&::before
+		content: ''
+		width: 18px
+		height: 9px
+		position: absolute
+		clip-path: polygon(0 0, 50% 100%, 100% 0)
+		background: #4E4E4E
+		backdrop-filter: blur(65.5px)
+		bottom: -9px
+		left: 30px
