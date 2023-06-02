@@ -96,6 +96,13 @@ $('.product-gallery-preview').slick({
 	variableWidth: true,
 });
 
+$('.checkbox-agreement input:checkbox').change(function () {
+	if ($(this).is(":checked")) {
+		$(this).parents('.checkbox-agreement').prev('.btn').removeClass('disabled');
+	} else {
+		$(this).parents('.checkbox-agreement').prev('.btn').addClass('disabled');
+	}
+});
 
 // модальные окна (несколько)
 $(function () {
@@ -137,3 +144,4 @@ $(function () {
 			);
 	});
 });
+
