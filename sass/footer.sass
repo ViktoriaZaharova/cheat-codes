@@ -127,6 +127,11 @@ footer
 	position: relative
 	padding: 32px
 	border-bottom: 1px solid #313131
+	&-description
+		margin: 8px 0 0
+		font-weight: 500
+		max-width: 450px
+		line-height: 24px
 
 .modal__body	
 	padding: 32px
@@ -151,6 +156,24 @@ footer
 		font-weight: 600
 
 .form
-	[type="submit"]
+	[type="submit"], .btn
 		width: 100%
 		padding: 16px 24px
+
+.label-error
+	input
+		border-color: $accent		
+
+.error-box
+	width: 100%
+	display: flex
+	align-items: center
+	margin: 8px 0 0
+	color: #FF5353
+	font-size: 14px
+	&__icon
+		@include d-flex
+		margin: 0 9px 0 0
+
+.link-modal
+	margin: 24px auto 0

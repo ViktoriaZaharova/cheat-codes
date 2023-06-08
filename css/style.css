@@ -295,6 +295,14 @@ a.color-accent:hover {
   color: #fff;
 }
 
+.color-white {
+  color: #fff;
+}
+
+a.color-white:hover {
+  color: #FF3358;
+}
+
 .container {
   width: 100%;
   max-width: 1332px;
@@ -649,4 +657,56 @@ h2 {
   background: #0FB36E url("../img/radio-check.svg") no-repeat center;
   background-size: 22px;
   border-color: #0FB36E;
+}
+
+.nav-pagination {
+  margin: 32px 0 0;
+  width: 100%;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pagination li {
+  margin: 0 8px 0 0;
+}
+.pagination li:last-child {
+  margin: 0;
+}
+.pagination li a {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  color: #fff;
+  stroke: #fff;
+  fill: none;
+  padding: 6px;
+  background: #181818;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pagination li a:hover, .pagination li a.active {
+  background: #292929;
+  color: #fff;
+}
+.pagination li .link-arrow.disabled {
+  stroke: #4E4E4E;
 }

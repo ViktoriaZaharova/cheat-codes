@@ -312,3 +312,111 @@ header .btn {
 .btn-burger.click .svg-icon__close {
   display: block;
 }
+
+.balance-box {
+  font-weight: 500;
+  margin: 0 20px 0 0;
+}
+.balance-box span {
+  color: #ABABAB;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+}
+
+.admin-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.admin-box__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #FF3358;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.admin-box__name {
+  color: #fff;
+  margin: 0 0 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.admin-box__name:hover {
+  color: #fff;
+}
+.admin-box__name .svg-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 0 0 2px;
+  fill: none;
+  stroke: #fff;
+}
+.admin-box__name.click .svg-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.admin-box .dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  padding: 12px 21px 12px 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.admin-box .dropdown-item:hover {
+  color: #FF3358;
+}
+.admin-box .dropdown-item:hover .svg-icon {
+  stroke: #FF3358;
+}
+.admin-box .dropdown-item .svg-icon {
+  fill: none;
+  stroke: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 0 12px 0 0;
+}

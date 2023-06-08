@@ -185,6 +185,12 @@ footer {
   padding: 32px;
   border-bottom: 1px solid #313131;
 }
+.modal__head-description {
+  margin: 8px 0 0;
+  font-weight: 500;
+  max-width: 450px;
+  line-height: 24px;
+}
 
 .modal__body {
   padding: 32px;
@@ -212,7 +218,40 @@ footer {
   font-weight: 600;
 }
 
-.form [type=submit] {
+.form [type=submit], .form .btn {
   width: 100%;
   padding: 16px 24px;
+}
+
+.label-error input {
+  border-color: #FF3358;
+}
+
+.error-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px 0 0;
+  color: #FF5353;
+  font-size: 14px;
+}
+.error-box__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 9px 0 0;
+}
+
+.link-modal {
+  margin: 24px auto 0;
 }

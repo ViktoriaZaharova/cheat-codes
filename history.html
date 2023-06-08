@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tankist</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<header>
+				<div class="container">
+
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+						<svg class="svg-icon svg-icon__close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+
+					<a href="index.html" class="logo"><span>Cheats.</span>Guru</a>
+
+					<nav class="nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="warranty.html">Наши гарантии</a></li>
+							<li><a href="faq.html">Поддержка</a></li>
+						</ul>
+						<div class="btn-group">
+							<a href="#entranceModal" class="btn btn-border open_modal">Вход</a>
+							<a href="#registrationModal" class="btn btn-accent open_modal">Регистрация</a>
+						</div>
+					</nav>
+
+					<div class="search-wrapper dropdown">
+						<a href="#" class="btn-search dropdown-toggle">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</a>
+
+						<div class="search-dropdown dropdown-menu">
+							<form method="post" class="form-search">
+								<label>
+									<input type="text" placeholder="Поиск..." name="search">
+								</label>
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+
+								<a href="#" class="form-search__close"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</form>
+
+							<div class="form-search-result">
+								<div class="form-search-result__head">
+									<h3>Результатов 2</h3>
+								</div>
+								<ul class="list-products my-ul">
+									<li>
+										<a href="#" class="product-row">
+											<span class="product-row__logo"><img src="img/game-logo10.svg" alt=""></span>
+											<span class="product-row__name">Counter-Strike: Global Offensive</span>
+											<span class="product-row__price">от 50 ₽</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="product-row">
+											<span class="product-row__logo"><img src="img/game-logo10.svg" alt=""></span>
+											<span class="product-row__name">Counter-Strike: Global Offensive</span>
+											<span class="product-row__price">от 50 ₽</span>
+										</a>
+									</li>
+								</ul>
+
+								<div class="form-search-result__zero text-center">
+									<p>По запросу ничего не найдено</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="language-wrapper dropdown">
+						<a href="#" class="btn-language dropdown-toggle"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#globe"></use>
+							</svg></a>
+
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">ru</a>
+							<a href="#" class="dropdown-item">eng</a>
+						</div>
+					</div>
+
+
+					<div class="balance-box">
+						<span>Баланс</span>
+						<p>1500 ₽</p>
+					</div>
+
+					<div class="admin-box dropdown">
+						<div class="admin-box__avatar">M</div>
+						<a href="#" class="admin-box__name dropdown-toggle">
+							<span>mill.sanders</span>
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+							</svg></a>
+
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#admin1"></use>
+								</svg>
+								<span>История покупок</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#admin2"></use>
+								</svg>
+								<span>Настройки аккаунта</span>
+							</a>
+							<a href="#" class="dropdown-item">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#admin3"></use>
+								</svg>
+								<span>Выйти</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</header>
+
+			<section class="page page-history">
+				<div class="container">
+					<h1>История покупок</h1>
+
+					<div class="table table-history">
+						<div class="thead">
+							<div class="tr">
+								<div class="th th-id">ID</div>
+								<div class="th th-date">Дата</div>
+								<div class="th th-product">Продукт</div>
+								<div class="th th-time">Период</div>
+								<div class="th th-sum">Сумма</div>
+								<div class="th th-nav"></div>
+							</div>
+						</div>
+
+						<div class="tbody">
+							<div class="tr">
+								<div class="tr-head">
+									<div class="td th-id">
+										<p>15845</p>
+									</div>
+									<div class="td th-date">
+										<p>22.01.2023</p>
+									</div>
+									<div class="td th-product">
+										<span>Counter-strike global offensive</span>
+										<p>Steals chams</p>
+									</div>
+									<div class="td th-time">
+										<p>10 дней</p>
+									</div>
+									<div class="td th-sum">
+										<p>1500 ₽</p>
+									</div>
+									<div class="td th-nav">
+										<div class="table-history-nav">
+											<a href="#" class="link-web"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#web"></use>
+												</svg></a>
+
+											<a href="#" class="table-toggle-btn"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="tr-body">
+									<div class="box-text">
+										<ul class="table-characteristics my-ul">
+											<li>
+												<p>Cheat Id</p>
+											</li>
+											<li>
+												<p>1151fhd-515151-514151egs-51351ege-egsegse</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="tr-head">
+									<div class="td th-id">
+										<p>15845</p>
+									</div>
+									<div class="td th-date">
+										<p>22.01.2023</p>
+									</div>
+									<div class="td th-product">
+										<span>Dead by Daylight</span>
+										<p>Steals chams</p>
+									</div>
+									<div class="td th-time">
+										<p>1 день</p>
+									</div>
+									<div class="td th-sum">
+										<p>400 ₽</p>
+									</div>
+									<div class="td th-nav">
+										<div class="table-history-nav">
+											<a href="#" class="link-web"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#web"></use>
+												</svg></a>
+
+											<a href="#" class="table-toggle-btn"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="tr-body">
+									<div class="box-text">
+										<ul class="table-characteristics my-ul">
+											<li>
+												<p>Cheat Id</p>
+											</li>
+											<li>
+												<p>1151fhd-515151-514151egs-51351ege-egsegse</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="tr-head">
+									<div class="td th-id">
+										<p>15845</p>
+									</div>
+									<div class="td th-date">
+										<p>22.01.2023</p>
+									</div>
+									<div class="td th-product">
+										<span>Dead by Daylight</span>
+										<p>Steals chams</p>
+									</div>
+									<div class="td th-time">
+										<p>1 день</p>
+									</div>
+									<div class="td th-sum">
+										<p>400 ₽</p>
+									</div>
+									<div class="td th-nav">
+										<div class="table-history-nav">
+											<a href="#" class="link-web"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#web"></use>
+												</svg></a>
+
+											<a href="#" class="table-toggle-btn"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="tr-body">
+									<div class="box-text">
+										<ul class="table-characteristics my-ul">
+											<li>
+												<p>Cheat Id</p>
+											</li>
+											<li>
+												<p>1151fhd-515151-514151egs-51351ege-egsegse</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="tr-head">
+									<div class="td th-id">
+										<p>15845</p>
+									</div>
+									<div class="td th-date">
+										<p>22.01.2023</p>
+									</div>
+									<div class="td th-product">
+										<span>Dead by Daylight</span>
+										<p>Steals chams</p>
+									</div>
+									<div class="td th-time">
+										<p>1 день</p>
+									</div>
+									<div class="td th-sum">
+										<p>400 ₽</p>
+									</div>
+									<div class="td th-nav">
+										<div class="table-history-nav">
+											<a href="#" class="link-web"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#web"></use>
+												</svg></a>
+
+											<a href="#" class="table-toggle-btn"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="tr-body">
+									<div class="box-text">
+										<ul class="table-characteristics my-ul">
+											<li>
+												<p>Cheat Id</p>
+											</li>
+											<li>
+												<p>1151fhd-515151-514151egs-51351ege-egsegse</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="tr-head">
+									<div class="td th-id">
+										<p>15845</p>
+									</div>
+									<div class="td th-date">
+										<p>22.01.2023</p>
+									</div>
+									<div class="td th-product">
+										<span>Dead by Daylight</span>
+										<p>Steals chams</p>
+									</div>
+									<div class="td th-time">
+										<p>1 день</p>
+									</div>
+									<div class="td th-sum">
+										<p>400 ₽</p>
+									</div>
+									<div class="td th-nav">
+										<div class="table-history-nav">
+											<a href="#" class="link-web"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#web"></use>
+												</svg></a>
+
+											<a href="#" class="table-toggle-btn"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="tr-body">
+									<div class="box-text">
+										<ul class="table-characteristics my-ul">
+											<li>
+												<p>Cheat Id</p>
+											</li>
+											<li>
+												<p>1151fhd-515151-514151egs-51351ege-egsegse</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="tr-head">
+									<div class="td th-id">
+										<p>15845</p>
+									</div>
+									<div class="td th-date">
+										<p>22.01.2023</p>
+									</div>
+									<div class="td th-product">
+										<span>Dead by Daylight</span>
+										<p>Steals chams</p>
+									</div>
+									<div class="td th-time">
+										<p>1 день</p>
+									</div>
+									<div class="td th-sum">
+										<p>400 ₽</p>
+									</div>
+									<div class="td th-nav">
+										<div class="table-history-nav">
+											<a href="#" class="link-web"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#web"></use>
+												</svg></a>
+
+											<a href="#" class="table-toggle-btn"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg></a>
+										</div>
+									</div>
+								</div>
+								<div class="tr-body">
+									<div class="box-text">
+										<ul class="table-characteristics my-ul">
+											<li>
+												<p>Cheat Id</p>
+											</li>
+											<li>
+												<p>1151fhd-515151-514151egs-51351ege-egsegse</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<nav class="nav-pagination">
+						<ul class="pagination my-ul">
+							<li><a href="#" class="link-arrow disabled">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-left"></use>
+									</svg>
+								</a></li>
+							<li><a href="#" class="active">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#" class="link-arrow">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-right"></use>
+									</svg>
+								</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-box">
+						<h3 class="footer-box__title">Навигация</h3>
+						<ul class="footer-menu my-ul">
+							<li><a href="#">FAQ & Помощь</a></li>
+							<li><a href="#">Каталог игр</a></li>
+							<li><a href="#">Магазин аккаунтов</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3 class="footer-box__title">Другое</h3>
+						<ul class="footer-menu my-ul">
+							<li><a href="#">Наши гарантии</a></li>
+							<li><a href="#">Реферальная программа</a></li>
+							<li><a href="#">Скидки</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Подпишись на нас</h3>
+
+						<ul class="list-social my-ul">
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social1"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social2"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#social3"></use>
+									</svg></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="copyright">© 2023 Copyright</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<div class="modal__div" id="modal1">
+		<div class="modal__wrapper">
+			<div class="modal__head">
+				<div class="modal__close"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></div>
+				<h2>Чит Steals chams</h2>
+				<div class="subtitle">Для игры War Thunder на 7 дней</div>
+			</div>
+			<div class="modal__body">
+				<form method="post" class="form">
+					<label>
+						<div class="input-title">Введите свой Email для отправки данных</div>
+						<input type="text" name="mail" required>
+					</label>
+
+					<button type="submit" class="btn btn-accent" disabled>Оплатить</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+
+	<a href="#" class="btn-scroll-top btn-scroll-top-all"><svg class="svg-icon">
+			<use xlink:href="img/sprite.svg#arrow-top"></use>
+		</svg></a>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

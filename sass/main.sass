@@ -545,3 +545,120 @@
 		backdrop-filter: blur(65.5px)
 		bottom: -9px
 		left: 30px
+
+// history-page
+.page-history
+	margin: 0 0 60px
+	h1
+		margin: 0 0 60px
+
+.table
+	width: 100%
+
+.thead
+	padding: 0 0 16px
+	letter-spacing: 0.02em
+	text-transform: uppercase
+	font-size: 14px
+	color: #ABABAB	
+
+.tbody
+	width: 100%
+	.tr
+		background: #181818	
+		flex-wrap: wrap
+		&.open
+			background: #292929
+			.table-toggle-btn
+				transform: rotate(180deg)
+			.tr-body
+				display: block	
+
+.tr
+	width: 100%
+	margin: 0 0 16px
+	border-radius: 16px
+	display: flex
+	align-items: center
+	padding: 0 24px
+	&:last-child
+		margin: 0	
+
+.th, .td
+	padding: 0 12px
+	&:first-child
+		padding-left: 0
+	&:last-child
+		padding-right: 0	
+
+
+.tr-head
+	width: 100%
+	padding: 18px 0
+	display: flex
+	align-items: center		
+	cursor: pointer
+
+.tr-body
+	width: 100%
+	border-top: 1px solid #313131	
+	padding: 28px 0
+	display: none
+
+
+.th-id
+	width: 15%	
+
+.th-date
+	width: 20%
+
+.th-product
+	width: 25%
+	span
+		font-size: 12px
+		display: block
+		margin: 0 0 2px
+
+.th-time
+	width: 15%
+
+.th-sum
+	width: 13%			
+
+
+.th-nav
+	width: 12%
+
+.table-history-nav
+	display: flex
+	align-items: center
+	justify-content: flex-end
+
+.table-characteristics
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		display: flex
+		align-items: center
+		&:after
+			content: '·'
+			display: inline-block
+			margin: 0 4px
+		&:last-child
+			&::after
+				display: none	
+
+.link-web
+	margin: 0 32px 0 0	
+	&:hover
+		stroke: $accent
+
+
+.table-toggle-btn, .link-web
+	@include d-flex
+	width: 24px
+	height: 24px
+	min-width: 24px
+	fill: none
+	stroke: #fff			

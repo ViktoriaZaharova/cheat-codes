@@ -216,3 +216,63 @@ header
 			display: none
 		.svg-icon__close
 			display: block
+
+.balance-box
+	font-weight: 500
+	margin: 0 20px 0 0
+	span
+		color: #ABABAB
+		font-size: 12px
+		font-weight: normal
+		display: block
+
+.admin-box
+	display: flex
+	align-items: center
+	&__avatar
+		@include d-flex
+		color: #fff
+		border-radius: 50%
+		background: #FF3358
+		width: 32px
+		height: 32px
+		min-width: 32px
+		font-weight: 500
+		font-size: 16px
+	&__name
+		color: #fff
+		margin: 0 0 0 8px
+		display: flex
+		align-items: center
+		&:hover
+			color: #fff
+		.svg-icon
+			@include d-flex
+			width: 20px
+			height: 20px
+			min-width: 20px
+			margin: 0 0 0 2px
+			fill: none
+			stroke: #fff
+		&.click
+			.svg-icon
+				transform: rotate(180deg)
+	.dropdown-item
+		display: flex
+		align-items: center
+		white-space: nowrap
+		padding: 12px 21px 12px 16px
+		font-weight: 500
+		font-size: 16px
+		&:hover
+			color: $accent
+			.svg-icon
+				stroke: $accent
+		.svg-icon
+			fill: none
+			stroke: #fff
+			@include d-flex
+			width: 24px
+			height: 24px
+			min-width: 24px
+			margin: 0 12px 0 0

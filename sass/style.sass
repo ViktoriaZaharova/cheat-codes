@@ -214,6 +214,13 @@ a.color-accent
 	&:hover
 		color: #fff
 
+.color-white
+	color: #fff
+
+a.color-white
+	&:hover
+		color: $accent			
+
 .container
 	width: 100%
 	max-width: 1332px
@@ -460,3 +467,35 @@ h2
 			background-size: 22px
 			border-color: #0FB36E
 // checkbox my end
+
+.nav-pagination
+	margin: 32px 0 0
+	width: 100%
+
+.pagination
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	li
+		margin: 0 8px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 32px
+			height: 32px
+			min-width: 32px
+			color: #fff
+			stroke: #fff
+			fill: none
+			padding: 6px
+			background: #181818
+			border-radius: 8px
+			@include d-flex
+			&:hover, &.active	
+				background: #292929
+				color: #fff
+			
+		.link-arrow.disabled
+			stroke: #4E4E4E
+
