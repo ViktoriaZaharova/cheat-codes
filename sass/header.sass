@@ -229,6 +229,25 @@ header
 .admin-box
 	display: flex
 	align-items: center
+	.balance-box
+		display: none
+		width: 100%
+		align-items: center
+		flex-wrap: wrap
+		font-weight: normal
+		color: #ABABAB
+		p
+			width: fit-content
+		span
+			display: flex
+			align-items: center
+			color: #ABABAB
+			font-size: 16px
+			width: fit-content
+			&::after
+				content: '·'
+				margin: 0 4px
+				color: #ABABAB
 	&__avatar
 		@include d-flex
 		color: #fff
@@ -241,7 +260,7 @@ header
 		font-size: 16px
 	&__name
 		color: #fff
-		margin: 0 0 0 8px
+		
 		display: flex
 		align-items: center
 		&:hover
@@ -257,6 +276,8 @@ header
 		&.click
 			.svg-icon
 				transform: rotate(180deg)
+	&__text
+		margin: 0 0 0 8px
 	.dropdown-item
 		display: flex
 		align-items: center
@@ -276,3 +297,10 @@ header
 			height: 24px
 			min-width: 24px
 			margin: 0 12px 0 0
+
+	.mail-admin
+		color: #fff
+		margin: 0 0 4px
+		font-weight: normal
+		&:hover
+			color: $accent			

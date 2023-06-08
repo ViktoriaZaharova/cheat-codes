@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   padding: 16px 0;
   background: rgba(0, 0, 0, 0.5);
@@ -332,6 +333,40 @@ header .btn {
       -ms-flex-align: center;
           align-items: center;
 }
+.admin-box .balance-box {
+  display: none;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: normal;
+  color: #ABABAB;
+}
+.admin-box .balance-box p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.admin-box .balance-box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ABABAB;
+  font-size: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.admin-box .balance-box span::after {
+  content: "·";
+  margin: 0 4px;
+  color: #ABABAB;
+}
 .admin-box__avatar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +388,6 @@ header .btn {
 }
 .admin-box__name {
   color: #fff;
-  margin: 0 0 0 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,6 +418,9 @@ header .btn {
 .admin-box__name.click .svg-icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.admin-box__text {
+  margin: 0 0 0 8px;
 }
 .admin-box .dropdown-item {
   display: -webkit-box;
@@ -419,4 +456,12 @@ header .btn {
   height: 24px;
   min-width: 24px;
   margin: 0 12px 0 0;
+}
+.admin-box .mail-admin {
+  color: #fff;
+  margin: 0 0 4px;
+  font-weight: normal;
+}
+.admin-box .mail-admin:hover {
+  color: #FF3358;
 }

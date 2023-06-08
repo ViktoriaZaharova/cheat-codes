@@ -366,6 +366,11 @@ a.color-white:hover {
   padding: 0 18.5px;
 }
 
+.col-50 {
+  width: 50%;
+  padding: 0 18.5px;
+}
+
 .col-40 {
   width: 34%;
   padding: 0 18.5px;
